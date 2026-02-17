@@ -205,3 +205,31 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- Python Standard ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- RBVM-Engine Specifics ---
+
+# Ignore the SQLite database (stops you from committing your local scan data)
+rbvm_intel.db
+*.db
+*.sqlite3
+
+# Ignore the generated CSV asset inventory (if it's just a demo seed)
+assets_enterprise.csv
+
+# Ignore the temporary JSON artifacts from the risk engine
+rbvm_top_risks_*.json
+
+# Ignore the final PDF Executive Reports
+*.pdf
+Enterprise_Vulnerability_Risk_Assessment.pdf
+
+# --- IDE/System ---
+.vscode/
+.idea/
+.DS_Store
